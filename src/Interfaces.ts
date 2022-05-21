@@ -11,7 +11,7 @@ export function getPerson(): IPersonData {
     return {
         name: 'Petr',
         secondName: 'Smith',
-        age: '7',
+        age: 7,
     };
 }
 
@@ -35,4 +35,31 @@ export function getStudentsData(): IStudentData[] {
      * 3. Petr Ivanov 19 лет
      *
      */
+    const studentFirst: IStudentData = {
+        name: 'Ivan',
+        secondName: 'Petrov',
+        age: 20,
+        phone: '+7(555)555-55-50',
+    };
+
+    const studentSecond: IStudentData = {
+        name: 'Stepan',
+        secondName: 'Petrov',
+        age: 19,
+        phone: '+7(555)555-55-51',
+    };
+
+    const studentThird: IStudentData = {
+        name: 'Petr',
+        secondName: 'Ivanov',
+        age: 19,
+    };
+
+    const studentArr: IStudentData[] = [
+        studentFirst,
+        studentSecond,
+        studentThird,
+    ];
+
+    return studentArr;
 }
